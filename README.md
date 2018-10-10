@@ -6,4 +6,4 @@ SDK:
 
 File > Settings > Project: PyProjSE-v1.0.1 >
 
-Project Interpreter >  Set Python Path 
+Project Interpreter >  Set Python Path (Add -> System Interpreter)
