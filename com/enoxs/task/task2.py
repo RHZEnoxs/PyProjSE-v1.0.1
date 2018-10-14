@@ -76,8 +76,7 @@ def task2v7():
 # --- Single Statement Suites ---
 def task2v8():
     flag = 1
-    while (flag): print
-    'Given flag is really true!'
+    while (flag): print('Given flag is really true!')
     print("Good bye!")
 # ---  for Loop Statements ---
 def task2v9():
@@ -87,9 +86,48 @@ def task2v9():
     for fruit in fruits:  # Second Example
         print('Current fruit :', fruit)
     print("Good bye!")
+# --- Iterating by Sequence Index ---
+def task2v10():
+    fruits = ['banana', 'apple', 'mango']
+    for index in range(len(fruits)):
+        print('Current fruit :', fruits[index])
+    print("Good bye!")
+# --- Using else Statement with Loops ---
+def task2v11():
+    for num in range(10, 20):  # to iterate between 10 to 20
+        for i in range(2, num):  # to iterate on the factors of the number
+            if num % i == 0:  # to determine the first factor
+                j = num / i  # to calculate the second factor
+                print('%d equals %d * %d' % (num, i, j))
+                break  # to move to the next number, the #first FOR
+        else:  # else part of the loop
+            print(num, 'is a prime number')
+    print("task2v11 - II")
+    ctrl = 1
+    while ctrl:
+        num = int(input("Enter a number  :"))
+        if num == 0 :
+            ctrl = 0
+        for i in range(2, num):  # to iterate on the factors of the number
+            print("flag#1",i)
+            if num % i == 0:  # to determine the first factor
+                j = num / i  # to calculate the second factor
+                print('flag#2 %d equals %d * %d' % (num, i, j))
+                break  # to move to the next number, the #first FOR
+        else:  # else part of the loop
+            print("flag#3 ", num, 'is a prime number')
+
 # ---  nested loops ---
 
-
+# ---  ---
+# ---  ---
+# ---  ---
+# ---  ---
+# ---  ---
+# ---  ---
+# ---  ---
+# ---  ---
+# ---  ---
 # ---  ---
 
 if __name__ == '__main__':
@@ -97,4 +135,10 @@ if __name__ == '__main__':
     # task2v2()
     # task2v3()
     # task2v4()
-    task2v5()
+    # task2v5()
+    # task2v6()
+    # task2v7()
+    # task2v8()
+    # task2v9()
+    # task2v10()
+    task2v11()
