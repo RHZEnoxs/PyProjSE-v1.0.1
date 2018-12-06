@@ -7,3 +7,6 @@ SDK:
 File > Settings > Project: PyProjSE-v1.0.1 >
 
 Project Interpreter >  Set Python Path (Add -> System Interpreter)
+
+#####tutorial
+https://www.tutorialspoint.com/python3/index.htm
